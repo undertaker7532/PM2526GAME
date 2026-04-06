@@ -1,0 +1,52 @@
+:root {
+    --dialogue-border-color: #ffd69c;
+    --dialogue-bg-color: #211510;
+    --dialogue-name-bg-color: #35251c;
+    --dialogue-text-color: #fff;
+
+    --dialogue-name-font: 'Pixelify Sans', serif;
+    --dialogue-text-font: 'Pixelify Sans', sans-serif;
+}
+.dialogue-box {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+.dialogue-box .portrait {
+    width: 15rem;
+    height: 15rem;
+    border: var(--dialogue-border-color) 8px solid;
+    background-color: var(--dialogue-bg-color);
+}
+.dialogue-box .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dialogue-box .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+.dialogue-box .name {
+    width: fit-content;
+    padding: 1rem;
+    font-family: var(--dialogue-name-font);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    background-color: var(--dialogue-name-bg-color);
+    color: var(--dialogue-text-color);
+    border: var(--dialogue-border-color) 4px solid;
+}
+.dialogue-box .text {
+    font-family: var(--dialogue-text-font);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: var(--dialogue-bg-color);
+    color: var(--dialogue-text-color);
+    border: var(--dialogue-border-color) 4px solid;
+    flex-grow: 1;
+}
