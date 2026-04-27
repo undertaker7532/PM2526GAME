@@ -14,7 +14,7 @@ const rollSlot = () => {
             return "CHERRY";
         case inRange(symbolID, 12, 24): // 12
             return "BELL";
-        case inRange(symbolID, 25, 100): // 75 / 3 = 25 for each
+        case inRange(symbolID, 25 , 100): // 75 / 3 = 25 for each
             switch (Math.floor(Math.random() * 3) + 1) {
                 case 1:
                     return "LEMON";
